@@ -1,0 +1,198 @@
+commit 7ac14aa35ce3297ed7cfb237be167efe1b1693b9
+Author: leecm1010-debug <GitHub에 등록한 이메일>
+Date:   Thu Nov 26 20:54:18 2026 +0900
+
+    Q10: 실행 캡처
+
+ part2-price/capture/Q10/kafka_lag_monitor.png       | Bin 0 -> 38575 bytes
+ part2-price/capture/Q10/kafka_ui_consumer_group.png | Bin 0 -> 69363 bytes
+ part2-price/capture/Q10/offset_reset.png            | Bin 0 -> 35288 bytes
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit c7a1fa93ec06a2e21b0476c9a5b97432810dabc4
+Author: leecm1010-debug <GitHub에 등록한 이메일>
+Date:   Thu Nov 26 20:51:20 2026 +0900
+
+    Q10: 컨슈머 그룹 파티션별 lag 모니터링 스크립트
+
+ part2-price/kafka_lag_monitor.py | 37 +++++++++++++++++++++++++++++++++++++
+ 1 file changed, 37 insertions(+)
+
+commit eb4189d144d4b2470e9cfefaa196bb86b0c49db8
+Author: leecm1010-debug <GitHub에 등록한 이메일>
+Date:   Thu Nov 26 20:51:20 2026 +0900
+
+    Q9: 실행 캡처
+
+ part2-price/capture/Q9/airflow_dag_runs.png      | Bin 0 -> 83555 bytes
+ part2-price/capture/Q9/airflow_xcom.png          | Bin 0 -> 148221 bytes
+ part2-price/capture/Q9/athena_query_price.png    | Bin 0 -> 118352 bytes
+ part2-price/capture/Q9/athena_recent_queries.png | Bin 0 -> 169978 bytes
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+
+commit a24558e3dd108501ad23a3a013b66c4ba0626b09
+Author: leecm1010-debug <GitHub에 등록한 이메일>
+Date:   Thu Nov 26 20:29:06 2026 +0900
+
+    Q9: Airflow DAG (SparkSubmitOperator + Athena 테이블 등록·조회, 10분 스케줄)
+
+ part2-price/dags/price_pipeline_dag.py | 76 ++++++++++++++++++++++++++++++++++
+ 1 file changed, 76 insertions(+)
+
+commit 5ccccb8c059b81bd1d50d355a56e9230528490fc
+Author: leecm1010-debug <GitHub에 등록한 이메일>
+Date:   Thu Nov 26 20:29:06 2026 +0900
+
+    Q7-Q8: 실행 캡처
+
+ part2-price/capture/Q7/batch_console.png    | Bin 0 -> 90840 bytes
+ part2-price/capture/Q7/s3_bronze_price.png  | Bin 0 -> 185740 bytes
+ part2-price/capture/Q7/s3_silver_price.png  | Bin 0 -> 186788 bytes
+ part2-price/capture/Q8/change_rank_top1.png | Bin 0 -> 90840 bytes
+ part2-price/capture/Q8/s3_gold_price.png    | Bin 0 -> 165365 bytes
+ 5 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 18c45648774de7fab64329799c394aa5fd6ffa8d
+Author: leecm1010-debug <GitHub에 등록한 이메일>
+Date:   Thu Nov 26 20:21:06 2026 +0900
+
+    Q7-Q8: Spark 배치 Bronze/Silver + 품목별 월별 집계 + 윈도우 함수 변동률 순위 Gold
+
+ part2-price/price_batch.py | 137 +++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 137 insertions(+)
+
+commit 9a93ed16d01d889f0e82f3184d5d6c732980ad70
+Author: leecm1010-debug <GitHub에 등록한 이메일>
+Date:   Thu Nov 26 20:21:06 2026 +0900
+
+    Q6: 실행 캡처
+
+ part2-price/capture/Q6/kafka_ui_partitions.png | Bin 0 -> 90295 bytes
+ part2-price/capture/Q6/producer_run.png        | Bin 0 -> 26067 bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 4507d600d2abde293e29f43d969c058e8048749b
+Author: leecm1010-debug <GitHub에 등록한 이메일>
+Date:   Thu Nov 26 20:17:29 2026 +0900
+
+    Q6: 식료품 가격 Producer (권역별 커스텀 파티셔너)
+
+ part2-price/price_producer.py | 73 +++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 73 insertions(+)
+
+commit afefb5ee1d0d97a3ae85c97a2d692c66ba0006c2
+Author: leecm1010-debug <GitHub에 등록한 이메일>
+Date:   Thu Nov 26 20:17:28 2026 +0900
+
+    Q4-Q5: 실행 캡처
+
+ part1-ev/capture/Q4/s3_bronze.png       | Bin 0 -> 225916 bytes
+ part1-ev/capture/Q4/s3_silver.png       | Bin 0 -> 224100 bytes
+ part1-ev/capture/Q4/spark_streaming.png | Bin 0 -> 88785 bytes
+ part1-ev/capture/Q5/athena_query_ev.png | Bin 0 -> 137246 bytes
+ part1-ev/capture/Q5/s3_gold.png         | Bin 0 -> 152840 bytes
+ part1-ev/capture/Q5/slack_alert.png     | Bin 0 -> 549769 bytes
+ 6 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 8497939d2abad8c9567079eef7ff05edb2c7f2a5
+Author: leecm1010-debug <GitHub에 등록한 이메일>
+Date:   Thu Nov 26 16:11:44 2026 +0900
+
+    Q4-Q5: Spark Structured Streaming Bronze/Silver + 포트 점유 이상 Slack 알림 + Gold
+
+ part1-ev/charger_stream.py | 167 +++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 167 insertions(+)
+
+commit ddb69425141c75dfd27669f6eac0122136c19e3d
+Author: leecm1010-debug <GitHub에 등록한 이메일>
+Date:   Thu Nov 26 16:11:44 2026 +0900
+
+    Q3: 실행 캡처
+
+ part1-ev/capture/Q3/consumer_group_lag.png | Bin 0 -> 97647 bytes
+ part1-ev/capture/Q3/endedby_counts.png     | Bin 0 -> 55223 bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 77cfab8b190e19e9d16b85a4d379572aecc3783f
+Author: leecm1010-debug <GitHub에 등록한 이메일>
+Date:   Thu Nov 26 15:59:26 2026 +0900
+
+    Q3: Consumer 그룹 (수동 오프셋 커밋, 리밸런스 리스너)
+
+ part1-ev/charger_consumer.py | 68 ++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 68 insertions(+)
+
+commit 805d5b0e7136f6a0179cf9266172a4af39ea9b5e
+Author: leecm1010-debug <GitHub에 등록한 이메일>
+Date:   Thu Nov 26 15:59:26 2026 +0900
+
+    Q2: 실행 캡처
+
+ part1-ev/capture/Q2/kafka_ui_topic.png | Bin 0 -> 64660 bytes
+ part1-ev/capture/Q2/producer_run.png   | Bin 0 -> 27952 bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit a4f42661a13d48980940982c6cf2f8eb69360314
+Author: leecm1010-debug <GitHub에 등록한 이메일>
+Date:   Thu Nov 26 15:57:02 2026 +0900
+
+    Q2: idempotent producer 설정 수정 (max_in_flight=1)
+
+ part1-ev/charger_producer.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit d69df70e9600098e21742ec4570943c7549192c9
+Author: leecm1010-debug <GitHub에 등록한 이메일>
+Date:   Thu Nov 26 15:54:42 2026 +0900
+
+    Q2: 충전 세션 Producer (idempotence, acks=all, stationName 키)
+
+ part1-ev/charger_producer.py | 65 ++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 65 insertions(+)
+
+commit 7465cda150a7d11e3c810c432ab05ab1f999e7b0
+Author: leecm1010-debug <GitHub에 등록한 이메일>
+Date:   Thu Nov 26 15:54:41 2026 +0900
+
+    Q1: 실행 캡처
+
+ part1-ev/capture/Q1/docker_ps.png      | Bin 0 -> 48005 bytes
+ part1-ev/capture/Q1/ec2_instance.png   | Bin 0 -> 221052 bytes
+ part1-ev/capture/Q1/iam_role.png       | Bin 0 -> 185594 bytes
+ part1-ev/capture/Q1/iam_role_check.png | Bin 0 -> 39459 bytes
+ part1-ev/capture/Q1/security_group.png | Bin 0 -> 154420 bytes
+ part1-ev/capture/Q1/topic_describe.png | Bin 0 -> 45501 bytes
+ 6 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 695e097f7c287c2d8d9e0f38d70970123f54569f
+Author: leecm1010-debug <GitHub에 등록한 이메일>
+Date:   Thu Nov 26 15:48:29 2026 +0900
+
+    Q1: airflow 이미지 Java 11로 변경 (Spark 클러스터와 버전 일치)
+
+ part2-price/airflow/Dockerfile | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+
+commit c7f94ba289280c4f1d36208abf165d35f738c60f
+Author: leecm1010-debug <GitHub에 등록한 이메일>
+Date:   Thu Nov 26 15:46:24 2026 +0900
+
+    Q1: airflow 이미지 Python 3.8·Java 11로 변경 (Spark 클러스터와 버전 일치)
+
+ part2-price/airflow/Dockerfile | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit 588657a0aafd24424d93ebd40c17367b90ae176a
+Author: leecm1010-debug <GitHub에 등록한 이메일>
+Date:   Thu Nov 26 15:20:19 2026 +0900
+
+    Q1: docker-compose, requirements, airflow Dockerfile
+
+ .gitignore                     |   5 +
+ README.md                      |   9 ++
+ data/charger_sessions.csv      | 176 ++++++++++++++++++++++++++++++++++++
+ data/india_grocery_prices.csv  | 201 +++++++++++++++++++++++++++++++++++++++++
+ part1-ev/docker-compose.yaml   | 116 ++++++++++++++++++++++++
+ part1-ev/requirements.txt      |   1 +
+ part2-price/airflow/Dockerfile |  15 +++
+ 7 files changed, 523 insertions(+)

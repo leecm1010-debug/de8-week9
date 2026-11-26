@@ -1,4 +1,4 @@
-FROM apache/airflow:2.10.5-python3.10
+FROM apache/airflow:2.10.5-python3.8
 
 USER root
 RUN apt-get update \
@@ -10,6 +10,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 USER airflow
 RUN pip install --no-cache-dir \
     "apache-airflow==2.10.5" \
-    "apache-airflow-providers-apache-spark==5.0.0" \
-    --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.10.5/constraints-3.10.txt" \
+    "apache-airflow-providers-apache-spark==4.11.0" \
+    --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.10.5/constraints-3.8.txt" \
     && pip install --no-cache-dir --no-deps "pyspark==3.5.3"

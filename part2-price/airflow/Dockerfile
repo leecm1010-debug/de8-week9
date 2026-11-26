@@ -2,10 +2,12 @@ FROM apache/airflow:2.10.5-python3.8
 
 USER root
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends openjdk-17-jre-headless procps \
+    && apt-get install -y --no-install-recommends procps \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
-ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+COPY --from=apache/spark:3.5.3 /opt/java/openjdk /opt/java/openjdk
+ENV JAVA_HOME=/opt/java/openjdk
+ENV PATH="/opt/java/openjdk/bin:${PATH}"
 
 USER airflow
 RUN pip install --no-cache-dir \

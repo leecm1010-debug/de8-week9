@@ -42,7 +42,7 @@ def main():
         enable_idempotence=True,
         acks="all",
         retries=10,
-        max_in_flight_requests_per_connection=5,
+        max_in_flight_requests_per_connection=1,
         key_serializer=lambda k: k.encode("utf-8"),
         value_serializer=lambda v: json.dumps(v, ensure_ascii=False).encode("utf-8"),
     )
